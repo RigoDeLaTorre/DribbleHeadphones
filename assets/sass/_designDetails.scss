@@ -1,0 +1,86 @@
+#design-details{
+padding:0 100px;
+.headphones-details{
+  background:white;
+  display:flex;
+
+  .info-details{
+    flex:1;
+    background:#6356ed;
+    padding:50px;
+    border-radius:5px;
+    h2{
+      color:orange;
+      text-transform: uppercase;
+      font-size:1.2rem;
+      font-weight:500;
+        letter-spacing: 1px;
+    }
+    h1{
+      margin:2rem 0;
+      color:white;
+      font-size: 3rem;
+      font-weight:700;
+      letter-spacing: 2px;
+
+    }
+    .list-group{
+      letter-spacing: 1px;
+      font-size: .9rem;
+      position:relative;
+      display:flex;
+      flex-direction:row;
+      margin-bottom:1.5rem;
+      .icon{
+
+        background: orange;
+        border-radius: 50%;
+
+
+
+        img{
+          position:relative;
+          top:2px;
+        width:12px;
+        height:auto;
+        padding:5px;
+
+        }
+      }
+      h3{
+        color:white;
+        margin-left:15px;
+
+      }
+    }
+    .learn-button{
+      width:250px;
+      background:white;
+      border-radius: 50px;
+          box-shadow: 5px 10px 17px -1px rgba(89,83,83,0.219608);
+      h3{
+        color:#6356ed;
+        text-transform: uppercase;
+        padding:20px;
+        text-align: center;
+      }
+    }
+  }
+  .icon-container{
+    flex:2;
+    background:white;
+    display:flex;
+    flex-flow:row wrap;
+
+    .icon-image{
+      align-self: center;
+  text-align: center;
+      flex-basis:50%;
+      img{
+        width:50px;
+
+      }
+    }
+  }
+}
+}
