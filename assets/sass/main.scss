@@ -1,5 +1,5 @@
 @import "reset";
-@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 
 
 body {
@@ -46,10 +46,10 @@ Nav{
       margin-right:20px;
 
       h5{
-        font-size:.9rem;
+        font-size:.8rem;
         text-transform:uppercase;
         font-weight:500;
-        padding:13px 50px;
+        padding: 13px 60px 13px 30px;
         color:white;
         background:#6066f2;
         border-radius:20px;
@@ -67,6 +67,7 @@ Nav{
       &.signup{
       h5{
         background:#fea83b;
+        padding:13px 50px;
       }
       }
     }
@@ -90,7 +91,7 @@ Nav{
       span{
         color:#f7f7fe;
         font-size:20rem;
-        font-weight:700;
+        font-weight:900;
         letter-spacing: 3px;
 
 
@@ -99,9 +100,9 @@ Nav{
     .title{
       position: relative;
       h1{
-        font-size:5rem;
+        font-size:4rem;
         color:#6066f2;
-        font-weight:700;
+        font-weight:900;
         letter-spacing: 2px;
   z-index: 1;
       }
