@@ -19,7 +19,7 @@
   }
 
   .right-color-details {
-    position:relative;
+    position: relative;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -38,7 +38,7 @@
         .wheel {
           height: 80px;
           width: 80px;
-  background: radial-gradient(ellipse farthest-corner at 0 140%, #c787e7 0%, #7e68f7 70%, #c787e7 70%);
+          background: radial-gradient(ellipse farthest-corner at 0 140%, #c787e7 0%, #7e68f7 70%, #c787e7 70%);
           border-radius: 50%;
           box-shadow: 5px 10px 17px 5px rgba(89,83,83,0.219608);
         }
@@ -95,19 +95,20 @@
     }
 
     .right-section {
-            position:absolute;
-            right:-350px;
-      .input-container {
+      position: absolute;
+      right: -350px;
 
-        height:100%;
-        width:100%;
+      .input-container {
+        height: 100%;
+        width: 100%;
+
         input[type=range] {
-            transform: rotate(270deg);
+          transform: rotate(270deg);
           width: 500px;
           appearance: none;
           height: 15px;
           border-radius: 50px;
-background: linear-gradient(to left, #b485f3 0%,#eb9f67 35%,#a569dd 35%,#a569dd 35%,#9a20f7 63%,#adced8 64%,#adced8 83%,#db7ce8 99%);
+          background: linear-gradient(to left, #b485f3 0%,#eb9f67 35%,#a569dd 35%,#a569dd 35%,#9a20f7 63%,#adced8 64%,#adced8 83%,#db7ce8 99%);
           outline: none;
           opacity: 0.7;
           -webkit-transition: 0.2s;
@@ -119,8 +120,8 @@ background: linear-gradient(to left, #b485f3 0%,#eb9f67 35%,#a569dd 35%,#a569dd 
             appearance: none;
             width: 35px;
             height: 35px;
-                box-shadow: 0px 1px 1px 2px rgba(89,83,83,.2);
-background: radial-gradient(ellipse at center, orange 35%,#fffdfc 42%,#fffdfc 83%,#000000 83%,#fffdfc 83%,#050505 84%,#050505 84%);
+            box-shadow: 0 1px 1px 2px rgba(89,83,83,.2);
+            background: radial-gradient(ellipse at center, orange 35%,#fffdfc 42%,#fffdfc 83%,#000000 83%,#fffdfc 83%,#050505 84%,#050505 84%);
             cursor: pointer;
             border-radius: 50%;
           }
