@@ -1,13 +1,25 @@
 #design-details{
-padding:0 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  padding: 0 100px;
+  margin:0 auto;
+
 .headphones-details{
   background:white;
   display:flex;
+  border-radius: 5px;
+  box-shadow: 5px 10px 17px -1px rgba(89,83,83,0.219608);
+  width:100%;
 
   .info-details{
     flex:1;
-    background:#6356ed;
-    padding:50px;
+    background: linear-gradient(rgba(99, 86, 237, .9), rgba(99, 86, 237, .9)),url(/img/headphones.png) no-repeat center left;
+    background-size:auto;
+
+    padding: 50px;
     border-radius:5px;
     h2{
       color:orange;
@@ -19,7 +31,7 @@ padding:0 100px;
     h1{
       margin:2rem 0;
       color:white;
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-weight:700;
       letter-spacing: 2px;
 
@@ -30,20 +42,18 @@ padding:0 100px;
       position:relative;
       display:flex;
       flex-direction:row;
+      align-items: center;
+      align-content: center;
       margin-bottom:1.5rem;
       .icon{
-
         background: orange;
         border-radius: 50%;
-
-
-
         img{
-          position:relative;
-          top:2px;
-        width:12px;
-        height:auto;
-        padding:5px;
+          position: relative;
+          top: 2px;
+          width: 22px;
+          height: auto;
+          padding: 5px;
 
         }
       }
@@ -57,7 +67,7 @@ padding:0 100px;
       width:250px;
       background:white;
       border-radius: 50px;
-          box-shadow: 5px 10px 17px -1px rgba(89,83,83,0.219608);
+      box-shadow: 5px 10px 17px -1px rgba(89,83,83,0.219608);
       h3{
         color:#6356ed;
         text-transform: uppercase;
@@ -67,18 +77,45 @@ padding:0 100px;
     }
   }
   .icon-container{
+    position:relative;
     flex:2;
     background:white;
     display:flex;
     flex-flow:row wrap;
+    border-radius: 5px;
 
     .icon-image{
-      align-self: center;
-  text-align: center;
-      flex-basis:50%;
-      img{
-        width:50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-basis: 50%;
+      border: 1px solid #eff4f8;
+      flex-direction: column;
 
+      img{
+        width:70px;
+      }
+      h3{
+        margin-top:2rem;
+        color:#6356ed;
+        text-transform:uppercase;
+        font-weight:500;
+        font-size: 1.2rem;
+        letter-spacing: .5px;
+      }
+    }
+    .rotate-icon{
+      position:absolute;
+      top: 172px;
+      left: 45%;
+      width:80px;
+      background:white;
+      border-radius: 50%;
+      box-shadow: 5px 10px 17px -1px rgba(255, 193, 7, 0.31);
+      img{
+        padding:20px;
+        width:100%;
       }
     }
   }
