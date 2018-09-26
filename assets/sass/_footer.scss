@@ -1,0 +1,60 @@
+footer {
+  background:#584eda;
+
+  padding: 100px;
+  // background: url("/img/headphone-drawing.jpg");
+margin-top:5rem;
+
+
+  #copyright-info{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    h1{
+      font-size: 2.7rem;
+      color: white;
+      font-weight: 400;
+      text-align: center;
+      margin: 1rem 0;
+      text-transform:uppercase;
+      span{
+        color:#fea83b;
+        font-weight:900;
+      }
+    }
+    Nav{
+      margin-bottom:1rem;
+      ul{
+        display:flex;
+          color: white;
+        li{
+
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 20px;
+    letter-spacing: 0.5px;
+        }
+      }
+    }
+    .info{
+      h3{
+        color:white;
+      }
+      .social-icons{
+        margin-top:1.5rem;
+        display:flex;
+        justify-content: center;
+      
+        img{
+          width:25px;
+          height:25px;
+          margin-right:2rem;
+        }
+      }
+    }
+
+  }
+}

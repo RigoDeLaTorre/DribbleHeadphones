@@ -1,0 +1,132 @@
+#latest-headphones{
+  max-width: 1400px;
+  padding: 100px;
+  background: white;
+  margin: 0 auto;
+  .top-section{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-bottom:10rem;
+    .title{
+      max-width:50%;
+      h1{
+        color:#6a5cfa;
+        font-size:4.2rem;
+        font-weight:900;
+        letter-spacing: 1px;
+      }
+    }
+    .button-section{
+      display:flex;
+      .button{
+        background:#6a5cfa;
+        width:138px;
+        height:85px;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        &.button2{
+          background:white;
+          border:1px solid gray;
+        }
+        img{
+
+          width:25px;
+          height:25px;
+          max-width:100%;
+        }
+
+      }
+    }
+  }
+  .mid-section{
+    .group-container{
+      display:flex;
+      flex-direction:row;
+      justify-content: space-between;
+      .group{
+
+        .group-headphones{
+          position: relative;
+          width:322px;
+          height:327px;
+          background:red;
+          display:flex;
+          flex-direction:row;
+          justify-content: space-between;
+          .headphone-image{
+            position:absolute;
+              top:-105px;
+              left:-60px;
+            img{
+              max-width:450px;
+              height:auto;
+            }
+          }
+          .cart-button{
+            position:absolute;
+          right:-50px;
+          top:-50px;
+            width:100px;
+            height:100px;
+            border-radius:50%;
+            background:blue;
+            border:12px solid white;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            img{
+              width:30px;
+              height:30px;
+              border-radius: 50%;
+            }
+          }
+        }
+        .price-info{
+          margin:0 auto;
+          text-align: center;
+          &.box1{
+            h3{
+              color:rgb(246, 163, 73);
+            }
+            hr{
+                border-top:3px solid rgb(246, 163, 73);
+            }
+          }
+          &.box2{
+            h3{
+              color:rgb(102, 108, 242);
+            }
+            hr{
+                border-top:3px solid rgb(102, 108, 242);
+            }
+          }
+          &.box3{
+            h3{
+              color:rgb(139, 225, 218);
+            }
+            hr{
+                border-top:3px solid rgb(139, 225, 218);
+            }
+          }
+          hr{
+              width:40%;
+              margin:3rem auto;
+
+          }
+          h3{
+
+            font-size:2.2rem;
+            font-weight:900;
+            color:orange;
+
+          }
+        }
+      }
+    }
+
+  }
+}
