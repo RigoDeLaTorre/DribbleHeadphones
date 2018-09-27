@@ -8,6 +8,12 @@
   max-width: 1400px;
   padding: 100px;
   margin: 0 auto;
+  @media only screen and (max-width: 768px) {
+    height: 100%;
+  }
+  @media only screen and (max-width: 670px) {
+    padding: 0 25px;
+  }
 
   h1 {
     font-size: 4rem;
@@ -16,11 +22,19 @@
     letter-spacing: 2px;
     text-align: center;
     margin: 2rem 0;
+    @media only screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
   }
 
   .form-section {
     display: flex;
     justify-content: center;
+    @media only screen and (max-width: 530px) {
+      flex-direction: column;
+      margin: 0 auto;
+      max-width: 80%;
+    }
 
     .email-button {
       display: flex;
@@ -28,9 +42,19 @@
       position: relative;
       margin-top: 2rem;
       width: 475px;
+      @media only screen and (max-width: 768px) {
+        width: 75%;
+      }
+      @media only screen and (max-width: 530px) {
+        width: 250px;
+        margin: 1rem auto;
+      }
 
       &#name-button {
         width: 375px;
+        @media only screen and (max-width: 530px) {
+          width: 250px;
+        }
       }
 
       input {
@@ -39,11 +63,18 @@
         width: 100%;
         border: none;
         box-shadow: 5px 10px 17px -1px rgba(89, 83, 83, 0.2196078431372549);
+        @media only screen and (max-width: 768px) {
+          padding: 15px;
+        }
 
         &::placeholder {
           color: #c3d8e3;
           font-size: 1rem;
           padding-left: 45px;
+          @media only screen and (max-width: 768px) {
+            font-size: 0.6rem;
+            padding-left: 32px;
+          }
         }
       }
 
@@ -53,6 +84,12 @@
         left: 30px;
         width: 30px;
         height: 30px;
+        @media only screen and (max-width: 768px) {
+          top: 13px;
+          left: 22px;
+          width: 20px;
+          height: 20px;
+        }
 
         img {
           max-width: 100%;
@@ -64,6 +101,10 @@
         position: absolute;
         top: 10px;
         right: 7px;
+        @media only screen and (max-width: 768px) {
+          top: 6px;
+          right: 5px;
+        }
 
         h5 {
           background: #6066f2;
@@ -72,6 +113,10 @@
           padding: 20px 50px;
           border-radius: 50px;
           font-size: 1rem;
+          @media only screen and (max-width: 768px) {
+            padding: 10px 20px;
+            font-size: 0.7rem;
+          }
         }
       }
     }

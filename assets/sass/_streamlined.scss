@@ -3,6 +3,9 @@
   background: #6a5cfa;
   padding: 100px 200px;
   display: flex;
+  @media only screen and (max-width: 767px) {
+    padding: 50px;
+  }
 
   &:before {
     content: '';
@@ -23,8 +26,15 @@
     justify-content: center;
     align-content: center;
     align-items: center;
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
 
     .left-outlined-headphones {
+      @media only screen and (max-width: 1024px) {
+        margin: 5rem auto;
+      }
+
       .image {
         max-width: 100%;
 
@@ -38,6 +48,9 @@
       display: flex;
       flex-direction: column;
       margin-left: 7rem;
+      @media only screen and (max-width: 1024px) {
+        margin: 0 auto;
+      }
 
       h1 {
         font-weight: 700;
@@ -45,6 +58,9 @@
         color: white;
         letter-spacing: 2px;
         margin-bottom: 5rem;
+        @media only screen and (max-width: 768px) {
+          font-size: 2rem;
+        }
       }
 
       .group-container {
@@ -62,6 +78,11 @@
           width: 155px;
           height: 155px;
           margin-right: 2rem;
+          @media only screen and (max-width: 768px) {
+            padding: 11px;
+            width: 80px;
+            height: 80px;
+          }
 
           .outer-border {
             position: absolute;
@@ -74,6 +95,14 @@
             border: 7px solid #ffb501;
             border-bottom: 0;
             transform: rotate(90deg);
+            @media only screen and (max-width: 768px) {
+              top: 18px;
+              left: 18px;
+              width: 82px;
+              height: 41px;
+              border: 5px solid #ffb501;
+              border-bottom: 0;
+            }
 
             &.border2 {
               border: 7px solid rgb(233,108,231);
@@ -86,6 +115,10 @@
             border: 4px dashed rgba(245, 245, 245, 0.47);
             border-radius: 50%;
             padding: 20px;
+            @media only screen and (max-width: 768px) {
+              width: 54px;
+              padding: 10px;
+            }
           }
         }
 
@@ -97,6 +130,9 @@
             letter-spacing: 1px;
             font-weight: 700;
             margin-bottom: 1rem;
+            @media only screen and (max-width: 500px) {
+              font-size: 1.2rem;
+            }
           }
 
           h3 {
@@ -104,6 +140,9 @@
             font-weight: 300;
             margin-bottom: 1rem;
             letter-spacing: 1px;
+            @media only screen and (max-width: 500px) {
+              font-size: 0.8rem;
+            }
           }
 
           a {
@@ -112,6 +151,9 @@
             color: orange;
             font-size: 0.9rem;
             font-weight: 700;
+            @media only screen and (max-width: 500px) {
+              font-size: 0.7rem;
+            }
 
             &.link2 {
               color: #dc79e9;

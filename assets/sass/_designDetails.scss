@@ -5,6 +5,9 @@
   max-width: 1400px;
   padding: 0 100px;
   margin: 0 auto;
+  @media only screen and (max-width: 767px) {
+    padding: 0;
+  }
 
   .headphones-details {
     background: white;
@@ -12,6 +15,10 @@
     border-radius: 5px;
     box-shadow: 9px 10px 85px 9px rgba(0, 0, 0, 0.15);
     width: 100%;
+    z-index: 0;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
 
     .info-details {
       flex: 1;
@@ -102,6 +109,12 @@
         flex-basis: 50%;
         border: 1px solid #eff4f8;
         flex-direction: column;
+        // @media only screen and (max-width: 425px) {
+        // padding:20px;
+        // }
+        @media only screen and (max-width: 768px) {
+          padding: 25px;
+        }
 
         &:nth-child(2) {
           border-top-right-radius: 5px;
@@ -133,6 +146,10 @@
         background: white;
         border-radius: 50%;
         box-shadow: 5px 10px 17px -1px rgba(255, 193, 7, 0.1);
+        @media only screen and (max-width: 768px) {
+          top: 128px;
+          left: 42%;
+        }
 
         img {
           padding: 20px;

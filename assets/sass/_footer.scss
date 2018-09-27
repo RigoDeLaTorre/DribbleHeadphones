@@ -4,6 +4,10 @@ footer {
   position: relative;
   padding: 100px;
   // background: url("/img/headphone-drawing.jpg");
+  @media only screen and (max-width: 500px) {
+    padding: 50px 25px;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -14,6 +18,9 @@ footer {
     background: #000;
     background: url("/img/wave1.png");
     background-size: contain;
+    @media only screen and (max-width: 489px) {
+      height: 45px;
+    }
   }
 
   #copyright-info {
@@ -63,16 +70,17 @@ footer {
         margin-top: 1.5rem;
         display: flex;
         justify-content: center;
+
         img {
           width: 25px;
           height: 25px;
           margin-right: 2rem;
-          &:nth-child(3){
+
+          &:nth-child(3) {
             position: relative;
             top: 3px;
           }
         }
-
       }
     }
   }
